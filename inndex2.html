@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style> 
+
+#cont {
+width: 90%;
+max-width: 960px;
+margin: 0px auto;
+justify-items: stretch;
+display: grid;
+grid-template-columns: auto auto auto auto auto;
+grid-auto-rows: minmax(100px, auto);
+gap: 16px;
+flex-wrap: wrap;
+
+
+}
+.cont::after {
+content: "";
+display: block;
+clear: left;
+}
+
+
+
+.column {
+  display: flex;
+float: center;
+width: 170px;
+box-sizing: border-box;
+padding: 8px;
+align-items:flex-start;
+background-color: rgb(26, 86, 225);
+border-radius: 20px;
+background-image: url("phimage.png");
+background-size:contain;
+background-repeat: no-repeat;
+
+}
+
+.box {
+height: 20px;
+width: 170px;
+background-color: white;
+align-self: flex-end;
+border-radius: 0px 0px 20px 20px;
+align-self:flex-end;
+text-align: center;
+
+}
+@media screen and (max-width: 1024px) {
+#cont {
+grid-template-columns: auto auto auto auto auto;
+
+}
+}
+
+@media screen and (max-width: 768px) {
+#cont {
+grid-template-columns: auto auto auto;
+
+}
+}
+
+@media screen and (max-width: 468px) {
+#cont {
+grid-template-columns: auto ;
+
+}}
+
+
+    </style>
+</head>
+<body>
+    <h1>Gallery Heading</h1>
+    <div id="cont" class="cont" >
+        <div class="column">
+          <div class="box"> Image Title </div>
+        </div>
+        <div class="column">
+          <div class="box">Image Title</div>
+        </div>
+        <div class="column">
+          <div class="box">Image Title</div>
+        </div>
+        <div class="column">
+          <div class="box">Image Title</div>
+        </div>
+        <div class="column">
+          <div class="box">Image Title</div>
+        </div>
+
+
+        <div class="column">
+          <div class="box">Image Title</div>
+        </div>
+        <div class="column">
+            <div class="box">Image Title</div>
+          </div>
+          <div class="column">
+            <div class="box">Image Title</div>
+          </div>
+          <div class="column">
+            <div class="box">Image Title</div>
+          </div>
+          <div class="column">
+            <div class="box">Image Title</div>
+          </div>
+        </div>
+        
+      
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum iste ipsum nihil doloremque magnam eveniet? Necessitatibus voluptas enim, ad sint doloribus iusto doloremque blanditiis quos. Maiores dicta atque quasi nulla.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex illum eius nesciunt iure, cum incidunt? Quod dolore, provident exercitationem dignissimos illo ex nihil, debitis obcaecati beatae temporibus nam pariatur nisi?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, alias. Ea minus dolore sit est architecto sapiente necessitatibus eos, accusamus voluptatibus consectetur. Modi fugit ullam itaque quaerat praesentium odio tenetur!
+        </p>
+        
+</body>
+</html>
